@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>PaintJs</title>
+
+</head>
+<body>
+  <canvas id="jsCanvas" class="canvas"></canvas> <!--캔버스-->
+  
+  <div class="controls"> <!--컨트롤-->
+    <div class="controls_range"> <!--페인트 브러쉬의 사이즈 컨트롤-->
+      <input 
+      type="range" 
+      id="jsRange" 
+      min="0.1" 
+      max="5.0" 
+      value="2.5" 
+      step="0.1"/>
+
+    </div>
+    <div class="controls_btns">
+      <button id="jsMode">Fill</button>
+      <button id="jsSave">Save</button>
+    </div>
+    <div class="controls_colors" id="jsColors">
+      <div class="controls_color jsColors"
+       style="background-color: black;"></div>
+
+      <div class="controls_color jsColors"
+       style="background-color: white;"></div>
+
+      <div class="controls_color jsColors"
+       style="background-color: red;"></div>
+ 
+       <div class="controls_color jsColors"
+       style="background-color: orange;"></div
+       >
+      <div class="controls_color jsColors"
+       style="background-color: yellow;"></div
+       >
+      <div class="controls_color jsColors"
+       style="background-color: green;"></div>
+
+      <div class="controls_color jsColors"
+       style="background-color: skyblue;"></di
+       v>
+      <div class="controls_color jsColors"
+       style="background-color: blue;"></div>
+       <div class="controls_color jsColors"style="background-color: rgb(50, 8, 165);"></div>
+    
+      </div>
+    </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+<!--컨트롤 하기위해서는 3개의 버튼이 필요한데,
+paint, fill 와 save 버튼이다.-->
